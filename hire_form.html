@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <h1>Hire Form</h1>
+
+  <form action="/register" method="post">
+      <fieldset>
+          <legend>Basic Information</legend>
+          
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Enter Full Name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email" required>
+          
+          <label for="inquiry">Inquiry:</label>
+          <textarea id="inquiry" name="inquiry" rows="4" cols="50" placeholder="Please Enter Inquiry Here" required></textarea>
+      </fieldset>
+      
+      <fieldset>
+          <legend>Contact Information</legend>
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="(xxx)xxx-xxx">
+
+          <label>Preferred Contact Method:</label>
+            <label for="email">Email</label>
+            <input type="radio" id="email" name="contact-method" value="email" required/>
+            <label>Phone</label>
+            <input type="radio" id="phone" name="contact-method" value="phone" required/>
+          
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+              <option value="usa">United States</option>
+              <option value="canada">Canada</option>
+              <option value="mexico">Mexico</option>
+          </select>
+      </fieldset>
+
+      <fieldset>
+          <legend>Preferred Level</legend>
+          
+          <input type="radio" id="basic" name="Preferred level" value="basic" required>
+          <label for="basic">Basic (2 pages)</label>
+          
+          <input type="radio" id="intermidiate" name="Preferred level" value="intermidiate" required>
+          <label for="intermidiate">Intermidiate (4 pages)</label>
+          
+          <input type="radio" id="advanced" name="Preferred level" value="intermidiate" required>
+          <label for="advanced">Advanced (7 pages)</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferred Development Platforms:</legend>
+        <input type="checkbox" id="web" name="platform" value="web">
+        <label for="web">Web</label>
+        <input type="checkbox" id="mobile" name="platform" value="mobile">
+        <label for="mobile">Mobile</label>
+        <input type="checkbox" id="desktop" name="platform" value="desktop">
+        <label for="desktop">Desktop</label>
+      </fieldset>
+
+      <fieldset>
+          <legend>Terms and Conditions</legend>
+          
+          <input type="checkbox" id="agree-terms" name="agree-terms" required>
+          <label for="agree-terms">I agree to the <a href="terms_conditions.html" target="_blank">Terms and Conditions</a></label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
